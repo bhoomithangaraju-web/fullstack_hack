@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F5F3FF;
+    color: #1E293B;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  /* Clay Card Base */
+  .clay-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 8px 8px 16px rgba(180, 175, 205, 0.35), -8px -8px 20px rgba(255, 255, 255, 0.95);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .clay-card-interactive:hover {
+    transform: translateY(-2px);
+    box-shadow: 12px 12px 24px rgba(170, 165, 200, 0.45), -10px -10px 24px rgba(255, 255, 255, 1);
+  }
+
+  /* Clay Button Base */
+  .clay-button {
+    border-radius: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 6px 6px 12px rgba(170, 165, 195, 0.35), -5px -5px 10px rgba(255, 255, 255, 0.9);
+  }
+
+  .clay-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 8px 8px 16px rgba(160, 155, 185, 0.4), -6px -6px 12px rgba(255, 255, 255, 1);
+  }
+
+  .clay-button:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: inset 3px 3px 6px rgba(170, 165, 195, 0.4), inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  }
+
+  /* Clay Input Base */
+  .clay-input {
+    background: #F8F7FF;
+    border-radius: 16px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: inset 3px 3px 6px rgba(180, 175, 205, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.9);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .clay-input:focus {
+    outline: none;
+    border-color: #6366F1;
+    box-shadow: inset 3px 3px 6px rgba(180, 175, 205, 0.2), inset -3px -3px 6px rgba(255, 255, 255, 0.9), 0 0 0 3px rgba(99, 102, 241, 0.15);
+  }
+
+  /* Clay Pill Badges */
+  .clay-badge-scheduled {
+    background-color: #EFF6FF;
+    color: #1E40AF;
+    border: 1px solid #BFDBFE;
+    box-shadow: 3px 3px 6px rgba(191, 219, 254, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.9);
+  }
+
+  .clay-badge-completed {
+    background-color: #F0FDF4;
+    color: #166534;
+    border: 1px solid #BBF7D0;
+    box-shadow: 3px 3px 6px rgba(187, 247, 208, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.9);
+  }
+
+  .clay-badge-cancelled {
+    background-color: #FEF2F2;
+    color: #991B1B;
+    border: 1px solid #FECACA;
+    box-shadow: 3px 3px 6px rgba(254, 202, 202, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Soft custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F3FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
