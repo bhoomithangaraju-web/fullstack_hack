@@ -47,12 +47,12 @@ Core Requirements
 
 ## Screenshots
 
-![Screenshot 1](Screenshot%202026-09-23%20115857.png)
+![Screenshot1](Screenshot1.png)
 
-![Screenshot 2](Screenshot%202026-09-23%20144524.png)
+![Screenshot2](Screenshot2.png)
 
-![Screenshot 3](Screenshot%202026-09-23%20144642.png)
+![Screenshot3](Screenshot3.png)
 
-![Screenshot 4](Screenshot%202026-09-23%20144746.png)
+![Screenshot4](Screenshot4.png)
 
-![Screenshot 5](Screenshot%202026-09-23%20144932.png)
+![Screenshot5](Screenshot5.png)
